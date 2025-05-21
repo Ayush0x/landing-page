@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Backend Services by Ayush</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="hero" id="home">
+    <div class="hero-content">
+      <h1>Reliable Backend Services</h1>
+      <p>I help frontend developers by building fast, secure & scalable APIs and backend systems.</p>
+      <a href="#contact" class="btn">Request a Project</a>
+    </div>
+  </header>
+
+  <section class="features" id="features">
+    <h2>Why Work With Me?</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Fast & Secure</h3>
+        <p>APIs built using Java, Spring Boot with authentication, authorization & performance in mind.</p>
+      </div>
+      <div class="card">
+        <h3>Collaboration Ready</h3>
+        <p>Built for seamless integration with your frontend — React, Next.js, Vue or even static sites.</p>
+      </div>
+      <div class="card">
+        <h3>Deployment & Support</h3>
+        <p>Deployed via AWS, Render, or Railway with complete documentation and maintenance support.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Request a Project</h2>
+    <form action="https://formspree.io/f/xrbqdvlz" method="POST">
+      <input type="text" name="name" placeholder="Your name" required />
+      <input type="email" name="email" placeholder="Your email" required />
+      <textarea name="project" placeholder="Describe your project" required></textarea>
+      <button type="submit">Send Request</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ayush Sharma — Backend Dev for Hire</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href'))
+          .scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+
+</body>
+</html>
